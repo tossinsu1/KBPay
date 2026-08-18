@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         b.roleGroup.setOnCheckedChangeListener { _, _ -> updateRoleViews() }
         b.saveBtn.setOnClickListener { onSave() }
-        b.stopBtn.setOnClickListener { onStop() }
+        b.stopBtn.setOnClickListener { onStopClicked() }
         b.clearBtn.setOnClickListener {
             MessageStore.clear(this); refreshList()
         }
@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
         refreshList()
     }
 
-    private fun onStop() {
+    private fun onStopClicked() {
         SenderService.stop(this); ReceiverService.stop(this)
         toast("서비스를 중지했습니다")
     }
