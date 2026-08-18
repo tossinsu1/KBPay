@@ -114,7 +114,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="저장 & 시작" />
+                android:text="저장 &amp; 시작" />
 
             <Button
                 android:id="@+id/stopBtn"
