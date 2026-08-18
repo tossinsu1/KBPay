@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "471454580473",
+    "firebase_url": "https://kbpay-c8cf3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "kbpay-c8cf3",
+    "storage_bucket": "kbpay-c8cf3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:471454580473:android:0f5842d1bd718556c9ac28",
+        "android_client_info": {
+          "package_name": "com.tossinsu.smsrelay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGvfhe7sGct_DROe084-GOspsfjSHLT2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

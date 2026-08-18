@@ -1,0 +1,24 @@
+// ⚠️ 이 파일은 예시입니다. Firebase 콘솔에서 받은 진짜 파일로 교체하세요.
+// 1) Firebase 콘솔(https://console.firebase.google.com) 에서 프로젝트 생성
+// 2) Android 앱 추가 → 패키지명에 반드시 "com.tossinsu.smsrelay" 입력
+// 3) google-services.json 다운로드 → 이 폴더(app/)에 넣고 확장자 .SAMPLE 제거
+//    최종 경로: app/google-services.json
+//
+// 아래는 파일이 어떻게 생겼는지 보여주는 구조 예시일 뿐, 그대로 쓰면 빌드는 되지만 동작하지 않습니다.
+{
+  "project_info": {
+    "project_number": "000000000000",
+    "project_id": "your-project-id",
+    "firebase_url": "https://your-project-id-default-rtdb.firebaseio.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:000000000000:android:0000000000000000",
+        "android_client_info": { "package_name": "com.tossinsu.smsrelay" }
+      },
+      "api_key": [ { "current_key": "YOUR_API_KEY" } ]
+    }
+  ],
+  "configuration_version": "1"
+}
