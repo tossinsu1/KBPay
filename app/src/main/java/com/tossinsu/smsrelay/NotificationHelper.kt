@@ -16,7 +16,7 @@ object NotificationHelper {
 
     fun ensureChannels(ctx: Context) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) return
-        val nm = ctx.getSystemService(NotificationManager::class.java)
+        val nm = ctx.getSystemService(NotificationManager::class.java) ?: return
 
         val service = NotificationChannel(
             CHANNEL_SERVICE, "상시 실행",
@@ -69,6 +69,6 @@ object NotificationHelper {
             .build()
         // 발신번호별로 다른 알림 ID → 번호별로 쌓임
         ctx.getSystemService(NotificationManager::class.java)
-            .notify(("$from$ts").hashCode(), n)
+            ?.notify(("$from$ts").hashCode(), n)
     }
 }

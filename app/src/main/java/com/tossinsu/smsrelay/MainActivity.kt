@@ -141,7 +141,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun askIgnoreBatteryOptimization() {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) return
-        val pm = getSystemService(PowerManager::class.java)
+        val pm = getSystemService(PowerManager::class.java) ?: return
         if (pm.isIgnoringBatteryOptimizations(packageName)) return
         try {
             startActivity(Intent(

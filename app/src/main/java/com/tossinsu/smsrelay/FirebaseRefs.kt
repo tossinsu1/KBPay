@@ -1,8 +1,7 @@
 package com.tossinsu.smsrelay
 
 import com.google.firebase.database.DatabaseReference
-import com.google.firebase.database.ktx.database
-import com.google.firebase.ktx.Firebase
+import com.google.firebase.database.FirebaseDatabase
 
 /**
  * RTDB 경로 헬퍼.
@@ -11,7 +10,7 @@ import com.google.firebase.ktx.Firebase
  */
 object FirebaseRefs {
     fun messages(pairCode: String): DatabaseReference =
-        Firebase.database.reference
+        FirebaseDatabase.getInstance().reference
             .child("relay")
             .child(pairCode.ifBlank { "default" })
             .child("messages")
